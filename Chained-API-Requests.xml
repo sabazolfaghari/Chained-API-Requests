@@ -1,0 +1,21 @@
+<api xmlns="http://ws.apache.org/ns/synapse" name="name7" context="/context7">
+   <resource methods="GET" uri-template="/meysa">
+      <inSequence>
+         <call>
+            <endpoint>
+               <address uri="https://postman-echo.com/get?foo1=bar1&amp;foo2=bar2"/>
+               <property name="REST_URL_POSTFIX" value="/" scope="axis2"/>
+            </endpoint>
+         </call>
+         <property name="host" expression="json-eval($.headers.host)" scope="default" type="STRING"/>
+         <property name="HTTP_METHOD" value="GET" scope="axis2" type="STRING"/>
+         <property name="REST_URL_POSTFIX" expression="concat('/get?foo1=bar1&amp;foo2=',$ctx:host)" scope="axis2" type="STRING"/>
+         <call>
+            <endpoint>
+               <address uri="https://postman-echo.com"/>
+            </endpoint>
+         </call>
+         <respond/>
+      </inSequence>
+   </resource>
+</api>
