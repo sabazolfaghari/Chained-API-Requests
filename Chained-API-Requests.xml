@@ -1,5 +1,5 @@
-<api xmlns="http://ws.apache.org/ns/synapse" name="name7" context="/context7">
-   <resource methods="GET" uri-template="/meysa">
+<api xmlns="http://ws.apache.org/ns/synapse" name="chained-API-requests" context="/chained">
+   <resource methods="GET" uri-template="/requests">
       <inSequence>
          <call>
             <endpoint>
