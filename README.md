@@ -28,7 +28,7 @@ GET http://localhost:8280/chained/requests
 ```
 
 Example success response (200 OK):
-
+ ```bash
 {
     "args": {
         "foo1": "bar1",
@@ -50,3 +50,4 @@ Example success response (200 OK):
     },
     "url": "https://postman-echo.com/get?foo1=bar1&foo2=postman-echo.com"
 }
+```
