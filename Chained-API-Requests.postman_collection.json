@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "f533fwww-3dca-4b3f-bbf0-3c586c6cqqq5",
+		"_postman_id": "f222eeee-3dca-4b3f-bbf0-3c111w6cqqq5",
 		"name": "Chained-API-Requests",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "15984134"
@@ -52,7 +52,7 @@
 					"header": [
 						{
 							"key": "set-cookie",
-							"value": "sails.sid=s%3AE00EJ_nm3CdldAywxsyaXw8ftwQQiV6U.53UndfvKuEcyXY%2BMx8Wcc225ErrD5w%2Frxg0KXpYTVbI; Path=/; HttpOnly"
+							"value": "sails.sid=s%3AE00EJ_nm3CdldAywxsyaXw8ftwQQiV6U.53UndfvKuEcyXY%2BMx8Wcc225WrrV5w%2Frxg0KXpWWWcI; Path=/; HttpOnly"
 						},
 						{
 							"key": "ETag",
